@@ -1,0 +1,64 @@
+ <p><a><h1 class="p-4">Clientes</h1></a></p>
+ <div class="btn-toolbar justify-content-between p-4" role="toolbar">
+<div class="btn-group">
+          <button class="btn btn-outline-secondary" onclick='location.href="/clientes/add"'>Agregar Cliente</button>
+        </div>
+         <div class="input-group">
+          <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" autofocus>
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            </div>
+          </div>    
+<div class="conteiner p-4">
+    <div class="row">
+        <div class="col">
+            <h5>nombre y apellido</h5></div>
+        <div class="col">
+            <h5>CUIT</h5></div>
+        <div class="col">
+            <h5>Dirección</h5></div>
+        <div class="col">
+            <h5>Fecha de Nacimiento</h5></div>
+        <div class="col">
+            <h5>Departamento</h5></div>
+        <div class="col">
+            <h5>Código Postal</h5></div>
+        <div class="col">
+            <h5>Teléfono</h5></div>
+        <div class="col">
+            <h5>Jubilado</h5></div>
+        <div class="col">
+            <h5>Ult. vez Modificado</h5></div>
+        <div class="col">
+            <h5>acciones</h5></div>
+<div class="conteiner p-4">           
+        {{#each cliente}}   
+           <div class="row p-4">
+              
+               <div class="col">{{nombre}}, {{apellido}}</div>
+               <div class="col">{{cuit}}</div>
+               <div class="col">{{direccion}}</div>
+               <div class="col">{{fechNac}}</div>
+               <div class="col">{{departamento}}</div>
+               <div class="col">{{codigo_postal}}</div>
+               <div class="col">{{telefono}}</div>
+               <div class="col">{{jubilado}}</div>
+               <div class="col">{{timeago created_at}}</div>
+               <div class="col">
+               <div class="btn-group" role="group">
+               <button class="btn btn-outline-secondary" onclick='location.href="/clientes/edit/{{id}}"'>Modificar</button>
+               <button class="btn btn-outline-danger" onclick='location.href="/clientes/delete/{{id}}"'>Borrar</button></div></div>
+               </div>
+               {{else}}
+               <div class="col-md-4 mx-auto">
+                   <div class="card card-body text-center">
+                       <p>NO HAY CLIENTES EN LA BASE DE DATOS</p>
+                       <p>Por favor clickee el botón "Agregar" para ingresar uno nuevo.</p>
+                   </div>
+               </div>
+            {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

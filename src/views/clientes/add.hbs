@@ -1,0 +1,49 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+         <h1>Formulario de Ingreso de clientes</h1>
+            <form action="/clientes/add" method="POST">
+                <br>
+                <div class="form-group">
+                    Nombre <br>
+                    <input type="text" class="form control" name="nombre" placeholder="Nombre" autofocus>
+                </div>
+                    <div class="form-group">
+                    Apellido <br>
+                    <input type="text" class="form control" name="apellido" placeholder="Apellido">
+                    </div>
+                    <div class="form-group">
+                        CUIT <br>
+                    <input type="text" class="form control" name="cuit" placeholder="Cuit">
+                    </div>
+                    <div class="form-group">
+                        Domicilio <br>
+                    <input type="text" class="form control" name="direccion" placeholder="Domicilio">
+                    </div>
+                    <div class="form-group">
+                        Fecha de Nacimiento <br>
+                    <input type="date" class="form control" name="fechNac" placeholder="Fecha de Nacimiento">
+                    </div>
+                    <div class="form-group">
+                        Departamento <br>
+                    <input type="text" class="form control" name="departamento" placeholder="Departamento">
+                    </div>
+                    <div class="form-group">
+                        Código Postal <br>
+                    <input type="text" class="form control" name="codigo_postal" placeholder="Código Postal">
+                    </div>
+                    <div class="form-group">
+                        Teléfono <br>
+                    <input type="text" class="form control" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        Es Jubilado? <br>
+                    <input type="bolean" class="form control" name="jubilado" placeholder="Jubilado">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">Agregar Cliente</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

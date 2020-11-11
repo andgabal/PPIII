@@ -1,0 +1,27 @@
+<div class="col-md-8 mx-auto">
+<div class="card">
+    <div class="card-header">
+        <h1>Agregar Socio</h1>
+    </div>
+    <div class="card-body">
+        <form action="/socios/new-socio" method="POST">
+        <div class="form-group">
+           <p><h5>Nombre y Apellido del Socio</h5>
+            <input type="text" name="socioName" class="form-control" placeholder="Nombre del socio"></p> 
+            <p><h5>Documento Nacional de Identidad</h5>
+            <input type="number" name="sociodni" class="form-control" placeholder="DNI"></p>
+            <p><h5>Domicilio</h5>
+            <input type="text" name="sociodomcall" class="form-control" placeholder="Calle"><input type="number" name="sociodomnum" class="form-control" placeholder="Número"></p>
+            <p><h5>Número de Teléfono</h5>
+            <input type="number" name="socionum" class="form-control" placeholder="Número"></p>
+            <p><h5>Fecha de Nacimiento</h5>
+            <input type="date" name="sociofdn" class="form-control" placeholder="Fecha de Nacimiento"></p>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" type="submit"> Guardar</button>
+            <button class="btn btn-secundary btn-block" type="reset"> Borrar</button>
+        </div>
+        </div>
+        </form>
+    </div>
+</div>
+</div>

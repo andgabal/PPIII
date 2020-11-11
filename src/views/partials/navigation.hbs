@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <div class="container">
+    <a class="navbar-brand" href="/" >Club Control</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      {{#if user}}
+      <li class="nav-item">
+        <a class="nav-link" href="/clientes/">Clientes<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ctacte/mainmenu">Cuenta corriente</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/pagos/mainmenu">Pagos</a>
+      </li>
+      {{/if}}
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{userName}}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/src/views/usuarios/usuarios.hbs">Editar Usuario</a>
+          <a class="dropdown-item deactivated" href="/signup">Agregar Usuario</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/logout">Cerrar Sesión</a>
+        </div>
+      </li>
+      {{else}}
+      <li class="nav-item">
+        <a href="/login" class="nav-link">Ingreso</a>
+      </li>
+      {{/if}}
+    </ul>
+  </div>
+ </div>
+</nav>

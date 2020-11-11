@@ -1,0 +1,15 @@
+body{
+    background: #f5f6f5;
+    font-family: 'Varela Round', sans-serif;
+    overflow: hidden;
+}
+
+.index{
+    width: 100%;
+    height: 100%;
+}
+.mashead{
+    color: white;
+    min-height: 30rem;
+    widows: 100%;
+}

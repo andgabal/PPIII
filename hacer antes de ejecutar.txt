@@ -1,0 +1,3 @@
+codigo a insertar en consola o cmd
+ npm i express express-handlebars express-session mysql express-mysql-session morgan bcryptjs passport passport-local connect-flash express-validator
+ npm i nodemon -D
